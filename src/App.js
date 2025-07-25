@@ -76,7 +76,7 @@ export default function App(){
             {/* side navbar  */}
             {
                 activeSideNav &&
-                <div className="m-1 border-4 border-black bg-sky-200 flex flex-col">
+                <div className="m-1 border-4 border-black bg-sky-200 flex flex-col pb-16">
                     {/* clase button */}
                     <div className="absolute right-0 m-5 px-2 py-1.5 rounded-full bg-black">
                         <button onClick={() => setActiveSideNav(false)}><i className="fa-solid fa-xmark text-white text-lg rounded-full"/></button>
@@ -98,7 +98,7 @@ export default function App(){
                                     rel="noopener noreferrer"
                                     href={url}
                                     target="_blank"
-                                    className="bg-gray-600 border-4 border-black rounded-full p-3 mb-2">
+                                    className="bg-gray-600 border-4 border-black rounded-full p-3 mb-5">
                                     <i className={`fa-brands ${icon} rounded-full`} />
                                 </a>))
                         }

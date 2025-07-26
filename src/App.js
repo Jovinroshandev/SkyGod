@@ -1,6 +1,6 @@
 import BannerMain from "./component/bannerMain";
 import { useState } from "react"
-import MenuCloud from "./assets/menu-cloude.png";
+import MenuCloud from "./assets/image/menu-cloude.png";
 export default function App(){
   const [activeSideNav, setActiveSideNav] = useState(false)
     const socialIcons = [
@@ -39,7 +39,7 @@ export default function App(){
                 !activeSideNav &&
                 <>
                 <div className="bg-gray-600 border-4 m-1 md:m-3 border-black flex justify-between items-center p-5">
-                    <h1 className="text-xl md:text-4xl text-white font-bold">SkyGod</h1>
+                    <h1 className="text-2xl drop-shadow-2xl md:text-4xl text-white font-bold">SkyGod</h1>
                     <button className="md:hidden" onClick={() => setActiveSideNav(true)}><i className="fa-solid fa-bars text-white text-3xl"/></button>
                     <div className="hidden md:flex text-black font-bold  gap-16">
                         {
